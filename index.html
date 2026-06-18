@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MÖRPH is an AI-powered dream programming device that reads, shapes, and replays your dreams from a featherweight wearable disc."
+    />
+    <title>MÖRPH | Dream. Program. Morph.</title>
+    <link rel="icon" href="assets/morph-logo.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/program-kit.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="MÖRPH home">
+        <img src="assets/morph-logo.svg" alt="" />
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#program">[ Program ]</a>
+        <a href="#loop">[ Loop ]</a>
+        <a href="#inside">[ Device ]</a>
+        <a href="#replay">[ Replay ]</a>
+      </nav>
+      <a class="header-cta" href="#reserve">Reserve</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas class="dream-field" data-dream-field aria-hidden="true"></canvas>
+        <div class="grain" aria-hidden="true"></div>
+        <div class="hero-product" aria-hidden="true">
+          <img src="assets/program-kit.jpg" alt="" />
+        </div>
+        <div class="hero-shell">
+          <p class="system-label">[ DREAM OS / LOCAL LOOP ]</p>
+          <h1 id="hero-title">
+            Dreams are now
+            <span>programmable.</span>
+          </h1>
+          <p class="hero-copy">
+            MÖRPH reads the edge of sleep, keeps the AI on-device, and nudges the
+            dream back toward the intent you set before bed.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#program">Start the program</a>
+            <a class="button secondary" href="#inside">Inspect hardware</a>
+          </div>
+        </div>
+        <aside class="hero-console" aria-label="Dream program preview">
+          <div class="console-row">
+            <span>intent</span>
+            <strong data-dream-text>Flying over an endless ocean at sunset.</strong>
+          </div>
+          <div class="console-grid" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="console-row split">
+            <span>rem lock</span>
+            <strong>pending</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="signal-strip" aria-label="MÖRPH system signals">
+        <div>
+          <span>01</span>
+          <strong>Dry-contact EEG/EOG</strong>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>Sleep-stage classifier</strong>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Closed feedback loop</strong>
+        </div>
+        <div>
+          <span>04</span>
+          <strong>Visual replay</strong>
+        </div>
+      </section>
+
+      <section class="program-section" id="program">
+        <div class="section-title">
+          <p class="system-label">[ 01 / SET THE VIBE ]</p>
+          <h2>Write the scene like a prompt. Sleep runs it as a world.</h2>
+        </div>
+        <div class="program-grid">
+          <div class="prompt-surface">
+            <div class="prompt-line">
+              <span>&gt; dream.intent</span>
+              <p>"Flying over an endless ocean at sunset."</p>
+            </div>
+            <div class="prompt-line muted">
+              <span>&gt; constraints</span>
+              <p>no screens · no wake audio · hypnagogic seed only</p>
+            </div>
+            <div class="prompt-line active">
+              <span>&gt; output</span>
+              <p>lucid horizon / 8h program / chaos disabled</p>
+            </div>
+          </div>
+          <figure class="phone-frame">
+            <img src="assets/holding-phone.jpg" alt="MÖRPH mobile program screen before sleep" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="loop-section" id="loop">
+        <div class="section-title wide">
+          <p class="system-label">[ 02 / CLOSED LOOP ]</p>
+          <h2>The dream does not just play. It listens back.</h2>
+        </div>
+        <div class="loop-track" aria-label="How MÖRPH works">
+          <article class="step">
+            <span>01</span>
+            <h3>Set the vibe</h3>
+            <p>Describe the dream you want in plain language. MÖRPH turns your intent into a dream program.</p>
+          </article>
+          <article class="step">
+            <span>02</span>
+            <h3>Drift &amp; seed</h3>
+            <p>MÖRPH detects the hypnagogic window and seeds the theme with gentle sensory cues.</p>
+          </article>
+          <article class="step">
+            <span>03</span>
+            <h3>Read the dream</h3>
+            <p>On-device AI reconstructs an approximation of what you are dreaming in real time.</p>
+          </article>
+          <article class="step">
+            <span>04</span>
+            <h3>Shape the loop</h3>
+            <p>When the dream drifts off-script, the device nudges it back toward your intent.</p>
+          </article>
+          <article class="step">
+            <span>05</span>
+            <h3>Save &amp; replay</h3>
+            <p>Wake up to a visual replay. Save highlights, reload a dream, or remix it with chaos mode.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="inside-section" id="inside">
+        <div class="section-title">
+          <p class="system-label">[ 03 / DEVICE STACK ]</p>
+          <h2>A 12mm disc. Engineered for a full night of sensing.</h2>
+        </div>
+        <div class="exploded-layout">
+          <div class="exploded-figure">
+            <img src="assets/exploded-view.jpg" alt="Exploded view of MÖRPH device components" />
+            <button class="hotspot is-active" style="--x: 50%; --y: 14%" data-part="cap" aria-label="Top cap"></button>
+            <button class="hotspot" style="--x: 50%; --y: 33%" data-part="mainboard" aria-label="Mainboard"></button>
+            <button class="hotspot" style="--x: 50%; --y: 44%" data-part="cell" aria-label="LIR1254 cell"></button>
+            <button class="hotspot" style="--x: 50%; --y: 53%" data-part="ring" aria-label="Retention ring"></button>
+            <button class="hotspot" style="--x: 50%; --y: 66%" data-part="base" aria-label="Base"></button>
+            <button class="hotspot" style="--x: 50%; --y: 86%" data-part="gel" aria-label="Gel pad"></button>
+          </div>
+          <aside class="part-panel" aria-live="polite">
+            <span id="part-kicker">Top cap</span>
+            <h3 id="part-title">Neural Interface</h3>
+            <p id="part-description">
+              Concentric dry-contact electrodes read your brainwaves through the night.
+              The textured surface sits flush against the temple.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="privacy-section">
+        <div class="privacy-copy">
+          <p class="system-label">[ 04 / PRIVATE BY DESIGN ]</p>
+          <h2>Nothing leaves the device.</h2>
+          <p>
+            A low-power neural co-processor classifies sleep stage in real time and
+            runs the dream-shaping engine locally.
+          </p>
+        </div>
+        <div class="telemetry-panel" aria-label="On-device telemetry">
+          <div class="telemetry-top">
+            <span>REM confidence</span>
+            <strong>92%</strong>
+          </div>
+          <div class="wave" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="telemetry-bottom">
+            <span>local model active</span>
+            <span>network silent</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="replay-section" id="replay">
+        <figure class="kit-stage">
+          <img src="assets/kit-isolated.jpg" alt="MÖRPH kit with charging case, guide, gel pads, and cable" />
+        </figure>
+        <div class="replay-copy">
+          <p class="system-label">[ 05 / SAVE &amp; REPLAY ]</p>
+          <h2>Wake with a visual trace of where you went.</h2>
+          <p>
+            Save highlights, reload a dream tomorrow, or let the AI remix the night
+            into something stranger with chaos mode.
+          </p>
+          <div class="replay-tags">
+            <span>visual replay</span>
+            <span>reloadable dreams</span>
+            <span>chaos mode</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="reserve-section" id="reserve">
+        <p class="system-label">[ MÖRPH / NIGHTLY BUILD ]</p>
+        <h2>Sleep becomes the interface.</h2>
+        <a class="button primary" href="mailto:hello@morph.dream?subject=MÖRPH%20reservation">Reserve interest</a>
+      </section>
+
+      <section class="colophon-section" aria-labelledby="colophon-title">
+        <div class="colophon-label">
+          <p class="system-label" id="colophon-title">[ COLOPHON ]</p>
+        </div>
+        <div class="colophon-body">
+          <dl class="colophon-list">
+            <div>
+              <dt>Concept &amp; Design</dt>
+              <dd><a href="https://x.com/ibexdream" target="_blank" rel="noreferrer">@ibexdream</a></dd>
+            </div>
+            <div>
+              <dt>Built for</dt>
+              <dd><a href="https://x.com/nicdunz/status/2066598743751688611" target="_blank" rel="noreferrer">Krea Challenge ↗</a></dd>
+            </div>
+            <div>
+              <dt>Film</dt>
+              <dd>Seedance 2.0</dd>
+            </div>
+            <div>
+              <dt>Edit</dt>
+              <dd>DaVinci Resolve</dd>
+            </div>
+            <div>
+              <dt>Sound</dt>
+              <dd>Suno</dd>
+            </div>
+            <div>
+              <dt>Imagery</dt>
+              <dd>GPT Image 2 · Nano Banana Pro</dd>
+            </div>
+            <div>
+              <dt>Site</dt>
+              <dd>Codex</dd>
+            </div>
+            <div>
+              <dt>Logo</dt>
+              <dd>QuiverAi</dd>
+            </div>
+          </dl>
+          <p class="colophon-note">
+            MÖRPH is a speculative concept. Closed-loop dream synthesis does not
+            yet exist — but every piece points to where it could.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/morph-logo.svg" alt="MÖRPH" />
+      <p>Dream. Program. Morph.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
